@@ -1,9 +1,11 @@
-checked_amenities = []
+const jquery = require('jquery');
+let checked_amenities = [];
 $(document).ready(function() {
-    if $('checkbox').prop('checked', true) {
-	checked_amenities.push(amenity.id)
-    };
-    if $('checkbox').prop('checked', false) {
-	checked_amenities.pop(amenity.id)
-    };
+  if ($('checkbox').is('checked')) {
+    console.log("true");
+    checked_amenities.push(amenity.id);
+  }
+  if ($('checkbox').is('checked')) {
+    checked_amenities.pop(amenity.id);
+  }
 });
