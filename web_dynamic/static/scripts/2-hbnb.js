@@ -3,12 +3,10 @@ $(document).ready(function() {
     // Api available
     $.get("http://0.0.0.0:5001/api/v1/status/", function (apiReq) {
     if (apiReq.status === "OK") {
-      //($('#api_status'))
-	  console.log("hell yea");
+	  $('#api_status').addClass('available');
     }
     else {
-	  console.log (apiReq.status)
-	  console.log (apiReq)
+      $('#api_status').removeClass('available');
     }
   });
   // amenities checkboxes
